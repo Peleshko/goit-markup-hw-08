@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    height: 80px;
+    background-color: var(--secondary-text-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
