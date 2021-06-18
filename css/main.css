@@ -67,24 +67,56 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.18;
+    margin-bottom: 50px;
+  }
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .nav-menu {
@@ -497,12 +529,40 @@ body {
 .features {
   font-size: 14px;
   line-height: 1.71;
-  display: flex;
-  margin-left: -30px;
 }
 
-.features__item {
-  margin-left: 30px;
+@media screen and (max-width: 1199px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    max-width: 354px;
+  }
+  .features__item:nth-child(even) {
+    margin-left: 30px;
+  }
+  .features__item:nth-last-child(-n+2) {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    display: flex;
+  }
+  .features__item {
+    margin-bottom: 0px;
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__color {
@@ -520,11 +580,27 @@ body {
 }
 
 .features__title {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   color: var(--title-text-color);
   text-transform: uppercase;
-  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
+}
+
+.work-section {
+  padding-top: 0;
 }
 
 .work {
