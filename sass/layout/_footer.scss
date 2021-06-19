@@ -5,11 +5,6 @@
     text-align: center;
 }
 
-/*.footer-container {
-    display: flex;
-    align-items: baseline;
-}*/
-
 .footer-contacts {
     margin-bottom: 60px;
 }
@@ -19,6 +14,8 @@
 }
 
 .address__item {
+    width: 231px;
+    margin: auto;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -64,12 +61,6 @@
     margin-bottom: 20px;
 }
 
-/*.form {
-    display: block;
-    justify-content: center;
-    align-items: center;
-}*/
-
 .form__email {
     width: 450px;
     height: 50px;
@@ -99,7 +90,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
     .form {
         display: block;
         margin: auto;
@@ -142,9 +132,9 @@
     }
     
     .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
   
     .form__email {
