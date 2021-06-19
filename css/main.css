@@ -856,7 +856,55 @@ body {
 }
 
 .form__button-text {
+  display: inline-block;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
+    display: block;
+    margin: auto;
+  }
+  .tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .footer-contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: start;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .tablet {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-contacts {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .footer-subscription {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__email {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .filter {
