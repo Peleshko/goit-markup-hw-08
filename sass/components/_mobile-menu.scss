@@ -1,0 +1,120 @@
+@media screen and (max-width: 767px) {
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        background-color: var(--secondary-text-color);
+    
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    
+        transition: opacity, visibility;
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--animation-timing-function);
+    
+        &.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+          }
+    
+        &__container {
+          position: relative;
+           padding-left: 40px;
+           padding-top: 48px;
+          padding-bottom: 48px;
+        }
+    }
+    
+    
+    .mobile-menu__close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+    
+        transition-property: color;
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--animation-timing-function);
+    
+        &:hover,
+        &:focus {
+            color: #188ce8;
+        }
+    }
+    
+    .mobile-menu__nav {
+        margin-bottom: 302px;
+    
+        &-item {
+            font-weight: 500;
+            font-size: 40px;
+            letter-spacing: 0.02em; 
+        
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+    
+        &-link {
+            color: var(--title-text-color); 
+        }
+    }
+    
+    .mobile-menu__contacts {
+        margin-bottom: 64px;
+    
+        &-phone {
+            margin-bottom: 32px;
+            font-weight: 500;
+            font-size: 34px;
+            letter-spacing: 0.02em;
+    
+            &-link {
+                color: var(--accent-color);
+            }
+        }
+    
+        &-email {
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 0.02em;
+    
+            &-link {
+                color: var(--primary-text-color);
+            }
+        }
+    }
+    
+    .mobile-menu__network {
+        display: flex;
+    
+        &-item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    
+          &:not(:last-child) {
+              margin-right: 20px;
+          }
+        }
+    
+        &-link {
+            color: var(--accent-color);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}

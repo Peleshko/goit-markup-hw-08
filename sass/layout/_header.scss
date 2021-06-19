@@ -1,4 +1,4 @@
-.header {
+/*.header {
     display: flex;
     height: 80px;
     background-color: var(--secondary-text-color);
@@ -14,4 +14,92 @@
 .header__nav {
     display: flex;
     align-items: center;
+}*/
+
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &__mobile-menu-btn {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            line-height: 0;
+      
+            transition-property: fill;
+            transition-duration: var(--transition-duration);
+            transition-timing-function: var(--animation-timing-function);
+        
+            &:hover,
+            &:focus {
+                fill: #188ce8;
+            }  
+      }
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 80px;
+        background-color: var(--secondary-text-color);
+        border-bottom: 1px solid #ECECEC;
+
+        &__nav {
+            display: flex;
+            align-items: center;
+            padding-top: 26px;
+            padding-bottom: 26px;
+            margin-right: 84px;
+        }    
+    
+        &__nav-menu {
+            margin-left: 88px;
+        }    
+
+        &__mobile-menu-btn {
+            display: none;
+        }
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        display: flex;
+        height: 80px;
+        background-color: var(--secondary-text-color);
+        border-bottom: 1px solid #ECECEC;
+
+        &__nav {
+        display: flex;
+        align-items: center;
+        }
+
+        &__nav-menu {
+            margin-left: 93px;
+        }    
+    
+        &__mobile-menu-btn {
+            display: none;
+        }
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
