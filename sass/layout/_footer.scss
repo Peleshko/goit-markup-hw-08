@@ -2,15 +2,16 @@
     background-color: var(--grey-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
-.footer-container {
+/*.footer-container {
     display: flex;
     align-items: baseline;
-}
+}*/
 
 .footer-contacts {
-    margin-right: 70px;
+    margin-bottom: 60px;
 }
 
 .address {
@@ -59,25 +60,25 @@
 }
  
 .footer-subscription {
-    margin-right: 93px;
+    margin-bottom: 60px;
 }
 
 .down {
     margin-bottom: 20px;
 }
 
-.form {
-    display: flex;
+/*.form {
+    display: block;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .form__email {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
 
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
