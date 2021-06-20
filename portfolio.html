@@ -25,10 +25,10 @@
   
               <ul class="nav-menu header__nav-menu"> 
                   <li class="nav-menu__item">
-                      <a class="nav-menu__link nav-menu__link--current" href="index.html">Студия</a>
+                      <a class="nav-menu__link" href="index.html">Студия</a>
                   </li>
                   <li class="nav-menu__item">
-                      <a class="nav-menu__link" href="portfolio.html">Портфолио</a>
+                      <a class="nav-menu__link nav-menu__link--current" href="portfolio.html">Портфолио</a>
                   </li>
                   <li class="nav-menu__item">
                       <a class="nav-menu__link" href="">Контакты</a>
@@ -148,12 +148,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/website_desc.jpg 1x, ./images/picture_desc/website_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/website_tab.jpg 1x, ./images/picture_tab/website_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
 
-                                <img 
-                                src="./images/website.jpg" 
-                                alt="Веб-сайт Технокряк" 
-                                width="370" height="294"
-                                />    
+                                    <source
+                                        srcset="./images/picture_mob/website_mob.jpg 1x, ./images/picture_mob/website_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/website_desc.jpg" 
+                                        alt="Веб-сайт Технокряк" 
+                                        />
+                                </picture>            
+
                                 <div class="card-set__animation">                                
                                    <p class="card-set__animation-text">
                                 Технокряк это современная 
@@ -166,7 +179,7 @@
 
                             </div>
 
-                        <div class="card-set__content">
+                        <div class="card-set__content card-set__content--down">
                             <h3 class="card-set__desc">Технокряк</h3>
                             <p class="card-set__text">Веб-сайт</p>
                         </div>
@@ -176,11 +189,24 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/design-new-orlean.jpg" 
-                                alt="Постер Нью Орлеан и Голден Стар" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/new_orlean_desc.jpg 1x, ./images/picture_desc/new_orlean_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/new_orlean_tab.jpg 1x, ./images/picture_tab/new_orlean_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/new_orlean_mob.jpg 1x, ./images/picture_mob/new_orlean_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/new_orlean_desc.jpg" 
+                                        alt="Постер Нью Орлеан и Голден Стар" 
+                                        />
+                                </picture>            
 
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
@@ -193,8 +219,8 @@
                                  </div>    
                             </div>
 
-                        <div class="card-set__content">
-                            <h3 class="card-set__desc">Постер New Orlean vs Golden Star</h3>
+                        <div class="card-set__content ">
+                            <h3 class="card-set__desc card-set__desc--wrap">Постер New Orlean vs Golden Star</h3>
                             <p class="card-set__text">Дизайн</p>
                         </div>
                         </a>
@@ -203,11 +229,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/app-seafood.jpg" 
-                                alt="Ресторан Си фуд" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/seafood_desc.jpg 1x, ./images/picture_desc/seafood_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/seafood_tab.jpg 1x, ./images/picture_tab/seafood_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/seafood_mob.jpg 1x, ./images/picture_mob/seafood_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/seafood_desc.jpg" 
+                                        alt="Ресторан Си фуд" 
+                                        />
+                                </picture>    
+
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
                                  Технокряк это современная 
@@ -230,11 +270,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/marketing-prime.jpg" 
-                                alt="Большие черные наушники" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/prime_desc.jpg 1x, ./images/picture_desc/prime_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/prime_tab.jpg 1x, ./images/picture_tab/prime_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/prime_mob.jpg 1x, ./images/picture_mob/prime_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/prime_desc.jpg" 
+                                        alt="Большие черные наушники" 
+                                        />
+                                </picture>    
+
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
                                  Технокряк это современная 
@@ -258,11 +312,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/app-boxes.jpg" 
-                                alt="Белая и коричневая коробка" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/boxes_desc.jpg 1x, ./images/picture_desc/boxes_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/boxes_tab.jpg 1x, ./images/picture_tab/boxes_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/boxes_mob.jpg 1x, ./images/picture_mob/boxes_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/boxes_desc.jpg" 
+                                        alt="Белая и коричневая коробка" 
+                                        />
+                                </picture>    
+
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
                                  Технокряк это современная 
@@ -285,11 +353,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/website-inspiration.jpg" 
-                                alt="Моноблок Эпл Ай Мак" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/inspiration_desc.jpg 1x, ./images/picture_desc/inspiration_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/inspiration_tab.jpg 1x, ./images/picture_tab/inspiration_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/inspiration_mob.jpg 1x, ./images/picture_mob/inspiration_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/inspiration_desc.jpg" 
+                                        alt="Моноблок Эпл Ай Мак" 
+                                        />
+                                </picture>    
+
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
                                  Технокряк это современная 
@@ -311,11 +393,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/design-limited-edition.jpg" 
-                                alt="Журнал Лимитед Эдишион" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/edition_desc.jpg 1x, ./images/picture_desc/edition_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/edition_tab.jpg 1x, ./images/picture_tab/edition_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/edition_mob.jpg 1x, ./images/picture_mob/edition_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/edition_desc.jpg" 
+                                        alt="Журнал Лимитед Эдишион" 
+                                        />
+                                </picture>    
+
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
                                  Технокряк это современная 
@@ -337,11 +433,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/marketing-lab.jpg" 
-                                alt="Табличка с надписью" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/label_desc.jpg 1x, ./images/picture_desc/label_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/label_tab.jpg 1x, ./images/picture_tab/label_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/label_mob.jpg 1x, ./images/picture_mob/label_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/label_desc.jpg" 
+                                        alt="Табличка с надписью" 
+                                        />
+                                </picture>    
+
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
                                  Технокряк это современная 
@@ -364,11 +474,25 @@
                     <li class="card-set__item">
                         <a href="" class="card-set__link">
                             <div class="card-set__block">
-                                <img 
-                                src="./images/app-growing-bussines.jpg" 
-                                alt="Человек делает презентацию на ноутбуке" 
-                                width="370" height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="./images/picture_desc/bussines_desc.jpg 1x, ./images/picture_desc/bussines_desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+            
+                                    <source
+                                        srcset="./images/picture_tab/bussines_tab.jpg 1x, ./images/picture_tab/bussines_tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+
+                                    <source
+                                        srcset="./images/picture_mob/bussines_mob.jpg 1x, ./images/picture_mob/bussines_mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+            
+                                    <img 
+                                        src="./images/picture_desc/bussines_desc.jpg" 
+                                        alt="Человек делает презентацию на ноутбуке" 
+                                        />
+                                </picture>    
+
                                 <div class="card-set__animation">                                
                                     <p class="card-set__animation-text">
                                  Технокряк это современная 
@@ -467,7 +591,7 @@
           </div>
         </div>
     </footer>
-    
+
     <script src="./menu.js"></script>
 
 </body>

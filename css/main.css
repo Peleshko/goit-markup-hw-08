@@ -1170,6 +1170,7 @@ body {
 .filter {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .filter__item {
@@ -1199,22 +1200,8 @@ body {
   }
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card-set__item {
-  margin-right: 30px;
+.card-set__item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.card-set__item:nth-child(3n+3) {
-  margin-right: 0;
-}
-
-.card-set__item:nth-child(n+7) {
-  margin-bottom: 0;
 }
 
 .card-set__link {
@@ -1282,5 +1269,40 @@ body {
   font-size: 16px;
   line-height: 1.88;
   margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .card-set__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .card-set__content--down {
+    padding-bottom: 41px;
+  }
+  .card-set__desc--wrap {
+    width: 304px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .card-set__item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .card-set__item:nth-child(n+7) {
+    margin-bottom: 0;
+  }
+  .card-set__item:nth-child(2n) {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
