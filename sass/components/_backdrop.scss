@@ -9,6 +9,7 @@
     transition: opacity, visibility;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--animation-timing-function);
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
