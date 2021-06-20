@@ -6,10 +6,16 @@
 .data-form__text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--title-text-color);
     margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+    .data-form__text {
+        line-height: 1.15;
+    }
 }
 
 .data-form__label {
@@ -101,16 +107,25 @@
     margin-top: 10px;
     padding-left: 36px;
 
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+    .data-form__policy-text {
+        font-size: 14px;
+        line-height: 1.71;
+        }
+
+    .data-form__policy-icon {
+        margin-right: 8.38px;
+    }
 }
 
 .data-form__policy-icon {
     vertical-align: middle;
-    width: 16px;
-    height: 15px;
     margin-left:-23px;
-    margin-right: 8.38px;
+    margin-right: 8px;
 
     background-image: url(../images/not-checked.svg);
     background-color: var(--secondary-text-color);
@@ -127,8 +142,9 @@
         fill: var(--accent-color);
         border:0;
     }
-    
 }
+
+
 
 .data-form__button {
     align-self: center;
