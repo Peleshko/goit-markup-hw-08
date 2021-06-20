@@ -9,7 +9,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(/images/picture_mob/header-mob.jpg);
+        url(../images/picture_mob/header-mob.jpg);
 
     background-size: cover;  
     background-position: center;  
@@ -43,7 +43,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
                 ),
-                url(/images/picture_mob/header-mob@2x.jpg);
+                url(../images/picture_mob/header-mob@2x.jpg);
            }
         }
 
@@ -54,7 +54,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(/images/picture_tab/header_tab.jpg);
+        url(../images/picture_tab/header_tab.jpg);
     }
 }
 
@@ -67,7 +67,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
                 ),
-                url(/images/picture_tab/header_tab@2x.jpg);
+                url(../images/picture_tab/header_tab@2x.jpg);
            }
         }
 
@@ -83,7 +83,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(images/picture_desc/header_desc.jpg);
+        url(../images/picture_desc/header_desc.jpg);
     }
 
     .hero-section__title {
@@ -102,6 +102,6 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
                 ),
-                url(/images/picture_desc/header_desc@2x.jpg);
+                url(../images/picture_desc/header_desc@2x.jpg);
            }
         }
